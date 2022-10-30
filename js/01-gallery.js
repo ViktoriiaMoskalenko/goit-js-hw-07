@@ -9,7 +9,7 @@ const createImg = galleryItems
     (element) =>
       `<div class = "gallery__item">
       <a href ="#" class ="gallery__link">
-      <img class="gallery__image" src="${element.preview}" alt="${element.description}" data-source = "${element.original}">
+      <img loading="lazy" class="gallery__image" src="${element.preview}" alt="${element.description}" data-source = "${element.original}">
       </a>
       </div>`
   )
